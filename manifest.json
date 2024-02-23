@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Limitless Team Sheet Viewer",
+  "description": "An extension for Limitless that exports an OTS to view on the PokePaste website.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/script.js"],
+      "matches": ["https://play.limitlesstcg.com/*"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
